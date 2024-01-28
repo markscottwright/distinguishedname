@@ -197,6 +197,8 @@ def _rdn_to_string(rdn):
 def dn_to_string(dn: list[list[str]]) -> str:
     #  docstring is literal, so we only have to escape once
     r"""
+    Given a list of RDNs (which are expected to be a list of strings in "attr=value" format,
+    return a RFC2253-formatted string.
 
     >>> dn_to_string([["CN= James ", "UID=123"], ["OU=MI6,Q Division"]])
     'CN=\\20James\\20+UID=123,OU=MI6\\,Q Division'
