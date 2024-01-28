@@ -64,7 +64,8 @@ def _read_quoted_string(dn_reader):
         elif c == '\\':
             next_c = dn_reader.next_char()
 
-            # escaped special character
+            # escaped special character - I'm not sure if these are supposed to be interpreted this way.  The standard
+            # says that +,;<> "may" appear inside quotes without escaping, not that they "must".
             if next_c in r'"+,;\<>=':
                 out += next_c
 
