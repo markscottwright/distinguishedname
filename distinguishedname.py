@@ -32,7 +32,7 @@ def _read_attribute(dn_reader):
         if c == '':
             raise Exception("DN parsing error")
         attribute += c
-    return attribute
+    return attribute.strip()
 
 
 def _read_quoted_string(dn_reader):
