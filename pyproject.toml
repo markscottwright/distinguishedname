@@ -1,0 +1,22 @@
+[build-system]
+requires = ["flit_core>=3.4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "distinguishedname"
+version = "1.0.1"
+authors = [
+  { name="Mark Wright", email="markscottwright@gmail.com" },
+]
+description = "I parse and create RFC2253 compliant distinguished names (DNs)"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/markscottwright/distinguishedname"
+Issues = "https://github.com/markscottwright/distinguishedname/issues"
